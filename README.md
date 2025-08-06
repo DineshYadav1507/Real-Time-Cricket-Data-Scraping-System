@@ -66,3 +66,19 @@ Run:
 
 python manage.py fetch_matches_loop --minutes 5
 This will fetch matches every 5 minutes automatically.
+
+
+📋 Notes
+Ensure Google Chrome is installed.
+
+ChromeDriver is installed automatically using webdriver-manager.
+
+If CREX changes its HTML structure, update selectors in matches/scraping.py.
+
+For debugging, scraper saves:
+
+debug_crex.html → raw HTML when timeout occurs
+
+page_loaded.html → HTML after full load
+
+page_loaded.png → screenshot after load
