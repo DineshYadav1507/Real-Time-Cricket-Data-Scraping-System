@@ -18,7 +18,7 @@ This Django-based project scrapes live cricket data from [CREX](https://crex.com
 ## 🚀 How to Run Locally
 
 ```bash
-git clone  this repo
+git clone git@github.com:DineshYadav1507/Real-Time-Cricket-Data-Scraping-System.git
 cd real-time-cricket-scraper
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate (Windows)
