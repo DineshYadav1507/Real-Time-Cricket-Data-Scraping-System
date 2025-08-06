@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Scraped Upcoming Matches</h2>
+<ul>
+{% for match in matches %}
+    <li>{{ match.team_a }} vs {{ match.team_b }} - {{ match.time }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

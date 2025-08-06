@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ match.team_a }} vs {{ match.team_b }}</h2>
+<p>Venue: {{ match.venue }}</p>
+<p>Status: {{ match.status }}</p>
+
+{% if live_score %}
+<h3>Live Score</h3>
+<p><strong>{{ live_score.runs }}/{{ live_score.wickets }}</strong> in {{ live_score.overs }} overs</p>
+{% else %}
+<p>No live score available.</p>
+{% endif %}
+{% endblock %}
